@@ -43,8 +43,8 @@
   },
   "lint-staged": {
     "*": [
-      "prettier --write .",
-      "eslint .",
+      "npm run prettier",
+      "npm run lint",
       "git add ."
     ]
   }
