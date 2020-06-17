@@ -9,7 +9,9 @@
     "release_patch": "npm version patch",
     "postversion": "npm publish",
     "prepublishOnly": "npm run build",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint .",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -40,8 +42,9 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint src/*"
+    "*": [
+      "prettier --write .",
+      "eslint ."
     ]
   }
 }
