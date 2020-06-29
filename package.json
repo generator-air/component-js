@@ -42,7 +42,7 @@
     }
   },
   "lint-staged": {
-    "*": [
+    "*.js": [
       "npm run prettier",
       "npm run lint",
       "git add ."
