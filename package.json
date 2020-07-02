@@ -23,6 +23,13 @@
     "js-component",
     "component-js"
   ],
+  "files": [
+    "dist",
+    "index.js",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "Sherry Zhang",
   "license": "MIT",
   "devDependencies": {
