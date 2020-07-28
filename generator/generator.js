@@ -65,6 +65,7 @@ module.exports = class extends Generator {
   _foldersDelete() {
     const projectPath = `${this.destinationRoot()}/${this.answers.projectName}`;
     shell.rm('-rf', `${projectPath}/templates`);
+    shell.rm('-rf', `${projectPath}/generator`);
   }
 
   /* 生命周期函数 执行顺序，如下注释所示 */
